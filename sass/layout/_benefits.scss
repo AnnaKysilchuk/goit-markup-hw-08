@@ -1,0 +1,33 @@
+.benefits__list {
+  @extend %flex-center;
+  justify-content: space-between;
+}
+
+.benefits__item {
+  width: 270px;
+}
+
+.benefits__icons {
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  background-color: var(--secondary-dg-color);
+}
+
+.benefits__icon {
+  width: 70px;
+  height: 70px;
+}
+
+.benefits__title {
+  margin-bottom: 10px;
+  @include text-style(14px, 1.14, 0.03em, bold);
+  text-transform: uppercase;
+}
+
+.benefits__text {
+  @include text-style(14px, 1.71, 0.03em);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+}

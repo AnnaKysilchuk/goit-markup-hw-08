@@ -1,0 +1,16 @@
+.logo {
+  @extend %flex-center;
+  margin-right: 93px;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  @include text-style(26px, 1.19, 0.03em, bold);
+  color: var(--accent-color);
+
+  &__header {
+    color: #000000;
+  }
+
+  &__footer {
+    color: var(--main-dg-color);
+  }
+}

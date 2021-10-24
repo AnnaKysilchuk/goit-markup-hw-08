@@ -1,0 +1,40 @@
+.clients__list {
+  @extend %flex-center;
+}
+
+.clients__item {
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+  border: 1px solid var(--third-color);
+  border-radius: 4px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  @include transition(border-color);
+
+  &:hover,
+  & > .clients__company:focus {
+    border-color: var(--accent-color);
+  }
+}
+
+.clients__company {
+  width: 106px;
+  height: 60px;
+  @extend %flex-center;
+  justify-content: center;
+}
+
+.clients__icon {
+  fill: var(--third-color);
+
+  @include transition(fill);
+
+  .clients__item:hover &,
+  .clients__company:focus & {
+    fill: var(--accent-color);
+  }
+}
