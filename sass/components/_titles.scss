@@ -1,6 +1,10 @@
 .section-title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   @include text-style(36px, 1.17, 0.03em, bold);
   text-align: center;
   color: var(--main-color);
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
 }

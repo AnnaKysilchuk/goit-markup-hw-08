@@ -10,8 +10,17 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 1200px;
-  padding: 94px 15px;
+  width: $mobile;
+  padding: 60px 15px;
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+    padding: 94px 15px;
+  }
 }
 
 .visually-hidden {
