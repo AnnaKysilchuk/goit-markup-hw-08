@@ -3,18 +3,34 @@
 }
 
 .footer__container {
-  display: flex;
-  padding: 0;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    padding: 0;
+  }
+}
+
+.footer__logo-social--thumb {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .footer__logo--block {
-  margin-right: 70px;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  text-align: center;
+  margin-bottom: 60px;
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    margin-right: 165px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-right: 70px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .address__list {
-  margin-top: 30px;
+  margin-top: 20px;
   @include text-style(14px, 1.71, 0.03em);
 }
 
@@ -47,9 +63,19 @@
 }
 
 .footer__social--block {
-  margin-top: 72px;
-  margin-bottom: 100px;
-  margin-right: 93px;
+  @media screen and (max-width: $mobile) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: $tablet), (max-width: 1199px) {
+    margin-top: 5px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 72px;
+    margin-bottom: 100px;
+    margin-right: 93px;
+  }
 }
 
 .footer__title {
@@ -57,6 +83,10 @@
   @include text-style(14px, 1.14, 0.03em, bold);
   text-transform: uppercase;
   color: var(--main-dg-color);
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .footer__subscription--block {
@@ -65,14 +95,23 @@
 }
 
 .subscription {
-  @extend %flex-center;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
+}
+
+.subscription__input--thumb {
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .subscription__email {
-  width: 358px;
+  flex-basis: 450px;
   height: 50px;
   padding: 15px 16px;
-  margin-right: 12px;
+  margin-bottom: 20px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -81,6 +120,19 @@
 
   &::placeholder {
     color: rgba(255, 255, 255, 0.6);
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
+}
+
+.subscription__btn--thumb {
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    justify-content: center;
   }
 }
 
