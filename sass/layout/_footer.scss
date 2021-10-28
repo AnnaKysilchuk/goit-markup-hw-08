@@ -5,12 +5,12 @@
 .footer__container {
   @media screen and (min-width: $desktop) {
     display: flex;
-    padding: 0;
+    padding: 60px 15px;
   }
 }
 
 .footer__logo-social--thumb {
-  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     justify-content: center;
   }
@@ -23,9 +23,9 @@
     margin-right: 165px;
   }
   @media screen and (min-width: $desktop) {
+    margin-bottom: 0;
     margin-right: 70px;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    text-align: left;
   }
 }
 
@@ -72,8 +72,7 @@
   }
 
   @media screen and (min-width: $desktop) {
-    margin-top: 72px;
-    margin-bottom: 100px;
+    margin-top: 12px;
     margin-right: 93px;
   }
 }
@@ -90,8 +89,7 @@
 }
 
 .footer__subscription--block {
-  margin-top: 72px;
-  margin-bottom: 94px;
+  margin-top: 12px;
 }
 
 .subscription {

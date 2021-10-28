@@ -9,8 +9,8 @@ body {
 }
 
 .container {
+  width: 100%;
   margin: 0 auto;
-  width: $mobile;
   padding: 60px 15px;
 
   @media screen and (min-width: $tablet) {

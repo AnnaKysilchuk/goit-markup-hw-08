@@ -1,12 +1,26 @@
 .portfolio__filter {
   @extend %flex-center;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+
+  @media screen and (min-width: $tablet) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
 
 .filter__item {
   &:not(:last-child) {
     margin-right: 8px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
   }
 }
 
@@ -31,21 +45,30 @@
 }
 
 .work-example {
-  display: flex;
-  flex-wrap: wrap;
   margin-bottom: -30px;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
 .work-example__item {
-  width: 370px;
-  margin-right: 30px;
-  margin-bottom: 30px;
+  max-width: 450px;
+  margin: 0 auto 30px auto;
+
+  @media screen and (min-width: $tablet) {
+    flex-basis: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-basis: calc((100% - 6 * 15px) / 3);
+    margin: 15px;
+  }
 
   @include transition(box-shadow);
-
-  &:nth-child(3n) {
-    margin-right: 0;
-  }
 
   &:hover,
   .work-example__link:focus & {
@@ -57,8 +80,11 @@
 .work-example__img {
   position: relative;
   overflow: hidden;
-  width: 370px;
-  height: 294px;
+  width: 100%;
+}
+
+.work-example__img--pic {
+  width: 100%;
 }
 
 .description {
@@ -89,6 +115,12 @@
 .work-example__text {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
+}
+
+.first-tablet {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    height: 148px;
+  }
 }
 
 .work-example__title {

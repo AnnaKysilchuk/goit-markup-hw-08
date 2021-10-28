@@ -8,7 +8,7 @@
 
 .benefits__item {
   max-width: 450px;
-  margin-bottom: 30px;
+  margin: 0 auto 30px auto;
 
   @media screen and (min-width: $tablet) {
     flex-basis: calc((100% - 4 * 15px) / 2);
@@ -39,7 +39,7 @@
   @include text-style(14px, 1.14, 0.03em, bold);
   text-transform: uppercase;
 
-  @media screen and (max-width: $mobile) {
+  @media screen and (max-width: 767px) {
     text-align: center;
   }
 }
