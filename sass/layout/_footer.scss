@@ -63,11 +63,9 @@
 }
 
 .footer__social--block {
-  @media screen and (max-width: $mobile) {
-    margin-bottom: 60px;
-  }
+  margin-bottom: 60px;
 
-  @media screen and (min-width: $tablet), (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     margin-top: 5px;
   }
 

@@ -1,11 +1,14 @@
 body {
-  padding-top: 80px;
+  padding-top: 60px;
   background-color: var(--main-dg-color);
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
   color: var(--main-color);
-  padding-top: 80px;
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 80px;
+  }
 }
 
 .container {

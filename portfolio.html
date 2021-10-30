@@ -18,39 +18,108 @@
 </head>
 
 <body>  
-    <!-- <header class="header">
+    <header class="header">
         <div class="container header__container">
-            <nav class="site-navigation">
-                <a href="./index.html" class="link logo">Web
-                    <span class="logo__header">Studio</span>
-                </a>
-                <ul class="list navigation">
-                    <li class="navigation__item"><a class="link navigation__link" href="./index.html">Студия</a>
+            <a href="./index.html" class="link logo">Web
+                <span class="logo__header">Studio</span>
+            </a>
+            <div class="nav-auth__thumb">
+                <nav class="site-navigation">
+                    <ul class="list navigation">
+                        <li class="navigation__item"><a class="link navigation__link" href="./index.html">Студия</a>
+                        </li>
+                        <li class="navigation__item"><a class="link navigation__link current" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="navigation__item"><a class="link navigation__link" href="#contacts">Контакты</a></li>
+                    </ul>
+                </nav>
+                <ul class="list authorisation">
+                    <li class="authorisation__item">
+                        <a class="link authorisation__link" href="mailto:info@devstudio.com">
+                            <svg class="authorisation__icon mail" width="16px" height="12px">
+                                <use href="./images/icons.svg#icon-mail_icon"></use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
                     </li>
-                    <li class="navigation__item"><a class="link navigation__link current" href="./portfolio.html">Портфолио</a></li>
-                    <li class="navigation__item"><a class="link navigation__link" href="#contacts">Контакты</a></li>
+                    <li class="authorisation__item">
+                        <a class="link authorisation__link" href="tel:+380961111111">
+                            <svg class="authorisation__icon tel" width="10px" height="16px">
+                                <use href="./images/icons.svg#icon-tel_icon"></use>
+                            </svg>
+                            +38 096 111 11 11
+                        </a>
+                    </li>
                 </ul>
-            </nav>
-            <ul class="list authorisation">
-                <li class="authorisation__item">
-                    <a class="link authorisation__link" href="mailto:info@devstudio.com">
-                        <svg class="authorisation__icon" width="16px" height="12px">
-                            <use href="./images/icons.svg#icon-mail_icon"></use>
-                        </svg>
-                        info@devstudio.com
+            </div>
+            <div class="mobile-menu-link" mobile-menu-open>
+                <svg class="mobile-menu-link__icon" width="24px" height="16px">
+                    <use href="./images/icons.svg#icon-menu-mobile"></use>
+                </svg>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Mobile menu -->
+    
+    <div class="mobile-menu is-hidden" mobile-menu>
+        <button type="button" class="mobile-menu__close-btn" mobile-menu-close>
+            <svg class="mobile-menu__close-btn--img" width="19px" height="19px">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+        <nav class="mobile-menu__navigation">
+            <ul class="list mobile-menu__navigation--list">
+                <li class="mobile-menu__navigation--item">
+                    <a class="link mobile-menu__navigation--link current" href="./index.html">
+                        Студия
                     </a>
                 </li>
-                <li class="authorisation__item">
-                    <a class="link authorisation__link" href="tel:+380961111111">
-                        <svg class="authorisation__icon" width="10px" height="16px">
-                            <use href="./images/icons.svg#icon-tel_icon"></use>
-                        </svg>
-                        +38 096 111 11 11
+                <li class="mobile-menu__navigation--item">
+                    <a class="link mobile-menu__navigation--link" href="./portfolio.html">
+                        Портфолио
+                    </a>
+                </li>
+                <li class="mobile-menu__navigation--item is-hidden">
+                    <a class="link mobile-menu__navigation--link" href="./index.html#contacts">
+                        Контакты
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="mobile-menu__authorisation">
+            <a class="link mobile-menu__authorisation--tel" href="tel:+380961111111">
+                +38 096 111 11 11
+            </a>
+            <a class="link mobile-menu__authorisation--mail" href="mailto:info@devstudio.com">
+                info@devstudio.com
+            </a>
+        </div>
+        <div class="moblie-menu__social">
+            <ul class="list moblie-menu__social--list">
+                <li class="moblie-menu__social--item">
+                    <a class="link mobile-menu__social--link" href="">
+                        Instagram
+                    </a>
+                </li>
+                <li class="moblie-menu__social--item">
+                    <a class="link mobile-menu__social--link" href="">
+                        Twitter
+                    </a>
+                </li>
+                <li class="moblie-menu__social--item">
+                    <a class="link mobile-menu__social--link" href="">
+                        Facebook
+                    </a>
+                </li>
+                <li class="moblie-menu__social--item">
+                    <a class="link mobile-menu__social--link" href="">
+                        LinkedIn
                     </a>
                 </li>
             </ul>
         </div>
-    </header> -->
+    </div>
 
     <main>
         <h1 class="title section-title visually-hidden">Портфолио</h1>
@@ -333,6 +402,7 @@
         </div>
     </footer>
 
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

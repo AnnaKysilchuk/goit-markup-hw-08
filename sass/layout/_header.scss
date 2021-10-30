@@ -3,17 +3,37 @@
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 80px;
+
   background-color: var(--main-dg-color);
   border-bottom: 1px solid #ececec;
   z-index: 1;
 }
 
 .header__container {
+  position: relative;
+  min-height: 60px;
   @extend %flex-center;
-  justify-content: space-between;
   padding-top: 0;
   padding-bottom: 0;
+
+  @media screen and (min-width: $tablet) {
+    min-height: 80px;
+  }
+}
+
+.nav-auth__thumb {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  @media screen and (min-width: $tablet) {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .site-navigation {
@@ -25,12 +45,19 @@
 }
 
 .navigation__item {
-  position: relative;
-  @extend %flex-center;
-  height: 80px;
+  @media screen and (min-width: $tablet) {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 80px;
 
-  &:not(:last-child) {
-    margin-right: 50px;
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    height: 80px;
   }
 }
 
@@ -48,31 +75,50 @@
 .current {
   color: var(--accent-color);
 
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    margin-bottom: -1px;
-    background-color: var(--accent-color);
-    border-radius: 2px;
+  @media screen and (min-width: $tablet) {
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      margin-bottom: -1px;
+      background-color: var(--accent-color);
+      border-radius: 2px;
+    }
   }
 }
 
 .authorisation {
-  @extend %flex-center;
-  padding: 0;
-  @include text-style(14px, 1.14, 0.02em, 500);
+  @media screen and (min-width: $tablet) {
+    @include text-style(12px, 1.17, 0.02em, 500);
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    @include text-style(14px, 1.14, 0.02em, 500);
+  }
 }
 
 .authorisation__item {
-  @extend %flex-center;
-  height: 80px;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    text-align: center;
+  }
 
   &:not(:last-child) {
-    margin-right: 30px;
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    height: 80px;
+    &:not(:last-child) {
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -95,5 +141,16 @@
   .authorisation__item:hover &,
   &:focus {
     fill: var(--accent-color);
+  }
+
+  @media screen and (max-width: 1199px) {
+    &.mail {
+      width: 14px;
+      height: 10px;
+    }
+    &.tel {
+      width: 10px;
+      height: 14px;
+    }
   }
 }

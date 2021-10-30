@@ -13,6 +13,10 @@
     color: var(--main-dg-color);
   }
 
+  @media screen and (min-width: $tablet) {
+    margin-right: 88px;
+  }
+
   @media screen and (min-width: $desktop) {
     margin-right: 93px;
     @include text-style(26px, 1.19, 0.03em, bold);
