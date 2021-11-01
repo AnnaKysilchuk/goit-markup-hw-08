@@ -11,24 +11,26 @@
 
 .header__container {
   position: relative;
+  max-width: 480px;
   min-height: 60px;
   @extend %flex-center;
+  justify-content: space-between;
   padding-top: 0;
   padding-bottom: 0;
 
   @media screen and (min-width: $tablet) {
+    max-width: 768px;
     min-height: 80px;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: 1200px;
   }
 }
 
 .nav-auth__thumb {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+  display: none;
   @media screen and (min-width: $tablet) {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
+    display: block;
     width: 100%;
     display: flex;
     align-items: center;

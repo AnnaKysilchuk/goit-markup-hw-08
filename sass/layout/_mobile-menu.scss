@@ -1,15 +1,11 @@
 .mobile-menu-link {
-  position: absolute;
-  right: 0;
   @extend %flex-center;
   justify-content: center;
   width: 40px;
   height: 40px;
 
   @media screen and (min-width: $tablet) {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+    display: none;
   }
 }
 

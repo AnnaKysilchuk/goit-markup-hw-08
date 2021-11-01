@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Студия</title>
+    <title>Портфолио</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -161,7 +161,29 @@
                         <li class="item work-example__item">
                             <a href="" class="link work-example__link">
                                 <div class="work-example__img">
-                                    <img class="no-gap work-example__img--pic" src="./images/project_1.jpg" alt="Изображение ноутбука с открытым веб-сайтом">
+                                    <picture>
+                                        <source 
+                                            srcset="
+                                                ./images/work1-desktop.jpg 1x, 
+                                                ./images/work1-desktop@2x.jpg 2x"
+                                            media="(min-width: 1200px)" />
+                                        <source 
+                                            srcset="
+                                                ./images/work1-tablet.jpg 1x, 
+                                                ./images/work1-tablet@2x.jpg 2x" 
+                                            media="(min-width: 768px)" />
+                                        <source 
+                                            srcset="
+                                                ./images/work1-mobile.jpg 1x, 
+                                                ./images/work1-mobile@2x.jpg 2x" 
+                                            media="(max-width: 767px)" />
+                                        <img 
+                                            class="no-gap work-example__img--pic" 
+                                            src="./images/work1-desktop.jpg"
+                                            alt="Изображение ноутбука с открытым веб-сайтом"
+                                            width="100%"
+                                            height="auto">
+                                    </picture>
                                     <div class="description">
                                         <p class="description__text">
                                             Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
@@ -179,7 +201,29 @@
                         <li class="item work-example__item">
                             <a href="" class="link work-example__link">
                                 <div class="work-example__img">
-                                    <img class="no-gap work-example__img--pic" src="./images/project_2.jpg" alt="Изображение баскетбольных игроков в прыжке">
+                                    <picture>
+                                        <source 
+                                            srcset="
+                                                ./images/work2-desktop.jpg 1x, 
+                                                ./images/work2-desktop@2x.jpg 2x" 
+                                            media="(min-width: 1200px)" />
+                                        <source 
+                                            srcset="
+                                                ./images/work2-tablet.jpg 1x, 
+                                                ./images/work2-tablet@2x.jpg 2x" 
+                                            media="(min-width: 768px)" />
+                                        <source 
+                                            srcset="
+                                                ./images/work2-mobile.jpg 1x, 
+                                                ./images/work2-mobile@2x.jpg 2x" 
+                                            media="(max-width: 767px)" />
+                                        <img 
+                                            class="no-gap work-example__img--pic" 
+                                            src="./images/work2-desktop.jpg"
+                                            alt="Изображение постера с баскетбольныти игроками в прыжке" 
+                                            width="100%" 
+                                            height="auto">
+                                    </picture>
                                     <div class="description">
                                         <p class="description__text">
                                             Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
@@ -197,7 +241,29 @@
                         <li class="item work-example__item">
                             <a href="" class="link work-example__link">
                                 <div class="work-example__img">
-                                    <img class="no-gap work-example__img--pic" src="./images/project_3.jpg" alt="Изображение логотипа ресторана">
+                                    <picture>
+                                        <source 
+                                            srcset="
+                                                ./images/work3-desktop.jpg 1x, 
+                                                ./images/work3-desktop@2x.jpg 2x" 
+                                            media="(min-width: 1200px)" />
+                                        <source 
+                                            srcset="
+                                                ./images/work3-tablet.jpg 1x, 
+                                                ./images/work3-tablet@2x.jpg 2x" 
+                                            media="(min-width: 768px)" />
+                                        <source
+                                            srcset="
+                                                ./images/work3-mobile.jpg 1x, 
+                                                ./images/work3-mobile@2x.jpg 2x" 
+                                            media="(max-width: 767px)" />
+                                        <img 
+                                            class="no-gap work-example__img--pic" 
+                                            src="./images/work3-desktop.jpg"
+                                            alt="Изображение логотипа ресторана" 
+                                            width="100%" 
+                                            height="auto">
+                                    </picture>
                                     <div class="description">
                                         <p class="description__text">
                                             Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
@@ -215,7 +281,29 @@
                         <li class="item work-example__item">
                             <a href="" class="link work-example__link">
                                 <div class="work-example__img">
-                                    <img class="no-gap work-example__img--pic" src="./images/project_4.jpg" alt="Изображение наушников">
+                                    <picture>
+                                        <source 
+                                            srcset="
+                                                ./images/work4-desktop.jpg 1x, 
+                                                ./images/work4-desktop@2x.jpg 2x" 
+                                            media="(min-width: 1200px)" />
+                                        <source 
+                                            srcset="
+                                                ./images/work4-tablet.jpg 1x, 
+                                                ./images/work4-tablet@2x.jpg 2x" 
+                                            media="(min-width: 768px)" />
+                                        <source 
+                                            srcset="
+                                                ./images/work4-mobile.jpg 1x, 
+                                                ./images/work4-mobile@2x.jpg 2x" 
+                                            media="(max-width: 767px)" />
+                                        <img 
+                                            class="no-gap work-example__img--pic" 
+                                            src="./images/work4-desktop.jpg"
+                                            alt="Изображение наушников" 
+                                            width="100%" 
+                                            height="auto">
+                                    </picture>
                                     <div class="description">
                                         <p class="description__text">
                                             Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
@@ -233,7 +321,29 @@
                         <li class="item work-example__item">
                             <a href="" class="link work-example__link">
                                 <div class="work-example__img">
-                                    <img class="no-gap work-example__img--pic" src="./images/project_5.jpg" alt="Изображение двух коробок">
+                                    <picture>
+                                        <source 
+                                            srcset="
+                                                ./images/work5-desktop.jpg 1x, 
+                                                ./images/work5-desktop@2x.jpg 2x" 
+                                            media="(min-width: 1200px)" />
+                                        <source 
+                                            srcset="
+                                                ./images/work5-tablet.jpg 1x, 
+                                                ./images/work5-tablet@2x.jpg 2x" 
+                                            media="(min-width: 768px)" />
+                                        <source 
+                                            srcset="
+                                                ./images/work5-mobile.jpg 1x, 
+                                                ./images/work5-mobile@2x.jpg 2x" 
+                                            media="(max-width: 767px)" />
+                                        <img 
+                                            class="no-gap work-example__img--pic" 
+                                            src="./images/work5-desktop.jpg"
+                                            alt="Изображение двух коробок с разработанным дизайном" 
+                                            width="100%" 
+                                            height="auto">
+                                    </picture>
                                     <div class="description">
                                         <p class="description__text">
                                             Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
@@ -251,7 +361,29 @@
                         <li class="item work-example__item">
                             <a href="" class="link work-example__link">
                                 <div class="work-example__img">
-                                    <img class="no-gap work-example__img--pic" src="./images/project_6.jpg" alt="Изображение моноблока с открытым веб-сайтом">
+                                    <picture>
+                                        <source 
+                                            srcset="
+                                                ./images/work6-desktop.jpg 1x, 
+                                                ./images/work6-desktop@2x.jpg 2x" 
+                                            media="(min-width: 1200px)" />
+                                        <source 
+                                            srcset="
+                                                ./images/work6-tablet.jpg 1x, 
+                                                ./images/work6-tablet@2x.jpg 2x" 
+                                            media="(min-width: 768px)" />
+                                        <source 
+                                            srcset="
+                                                ./images/work6-mobile.jpg 1x, 
+                                                ./images/work6-mobile@2x.jpg 2x" 
+                                            media="(max-width: 767px)" />
+                                        <img 
+                                            class="no-gap work-example__img--pic" 
+                                            src="./images/work6-desktop.jpg"
+                                            alt="Изображение моноблока с открытым веб-сайтом" 
+                                            width="100%" 
+                                            height="auto">
+                                    </picture>
                                     <div class="description">
                                         <p class="description__text">
                                             Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
@@ -269,7 +401,29 @@
                         <li class="item work-example__item">
                             <a href="" class="link work-example__link">
                                 <div class="work-example__img">
-                                    <img class="no-gap work-example__img--pic" src="./images/project_7.jpg" alt="Изображение розворота журнала">
+                                    <picture>
+                                        <source 
+                                            srcset="
+                                                ./images/work7-desktop.jpg 1x, 
+                                                ./images/work7-desktop@2x.jpg 2x" 
+                                            media="(min-width: 1200px)" />
+                                        <source 
+                                            srcset="
+                                                ./images/work7-tablet.jpg 1x, 
+                                                ./images/work7-tablet@2x.jpg 2x" 
+                                            media="(min-width: 768px)" />
+                                        <source 
+                                            srcset="
+                                                ./images/work7-mobile.jpg 1x, 
+                                                ./images/work7-mobile@2x.jpg 2x" 
+                                            media="(max-width: 767px)" />
+                                        <img 
+                                            class="no-gap work-example__img--pic" 
+                                            src="./images/work7-desktop.jpg"
+                                            alt="Изображение розворота журнала" 
+                                            width="100%" 
+                                            height="auto">
+                                    </picture>
                                     <div class="description">
                                         <p class="description__text">
                                             Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
@@ -287,7 +441,29 @@
                         <li class="item work-example__item">
                             <a href="" class="link work-example__link">
                                 <div class="work-example__img">
-                                    <img class="no-gap work-example__img--pic" src="./images/project_8.jpg" alt="Изображение бирки с названием компании">
+                                    <picture>
+                                        <source 
+                                            srcset="
+                                                ./images/work8-desktop.jpg 1x, 
+                                                ./images/work8-desktop@2x.jpg 2x" 
+                                            media="(min-width: 1200px)" />
+                                        <source 
+                                            srcset="
+                                                ./images/work8-tablet.jpg 1x, 
+                                                ./images/work8-tablet@2x.jpg 2x" 
+                                            media="(min-width: 768px)" />
+                                        <source 
+                                            srcset="
+                                                ./images/work8-mobile.jpg 1x, 
+                                                ./images/work8-mobile@2x.jpg 2x" 
+                                            media="(max-width: 767px)" />
+                                        <img 
+                                            class="no-gap work-example__img--pic" 
+                                            src="./images/work8-desktop.jpg"
+                                            alt="Изображение бирки с названием компании" 
+                                            width="100%" 
+                                            height="auto">
+                                    </picture>
                                     <div class="description">
                                         <p class="description__text">
                                             Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
@@ -305,8 +481,29 @@
                         <li class="item work-example__item">
                             <a href="" class="link work-example__link">
                                 <div class="work-example__img">
-                                    <img class="no-gap work-example__img--pic" src="./images/project_9.jpg"
-                                        alt="Изображение ноутбука на котором работает человек в приложении">
+                                    <picture>
+                                        <source 
+                                            srcset="
+                                                ./images/work9-desktop.jpg 1x, 
+                                                ./images/work9-desktop@2x.jpg 2x" 
+                                            media="(min-width: 1200px)" />
+                                        <source 
+                                            srcset="
+                                                ./images/work9-tablet.jpg 1x, 
+                                                ./images/work9-tablet@2x.jpg 2x" 
+                                            media="(min-width: 768px)" />
+                                        <source 
+                                            srcset="
+                                                ./images/work9-mobile.jpg 1x, 
+                                                ./images/work9-mobile@2x.jpg 2x" 
+                                            media="(max-width: 767px)" />
+                                        <img 
+                                            class="no-gap work-example__img--pic" 
+                                            src="./images/work9-desktop.jpg"
+                                            alt="Изображение ноутбука на котором работает человек в приложении" 
+                                            width="100%" 
+                                            height="auto">
+                                    </picture>
                                     <div class="description">
                                         <p class="description__text">
                                             Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу

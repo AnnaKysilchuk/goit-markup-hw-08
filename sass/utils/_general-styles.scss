@@ -6,7 +6,7 @@ body {
   font-weight: normal;
   color: var(--main-color);
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $tablet) {
     padding-top: 80px;
   }
 }

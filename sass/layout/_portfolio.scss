@@ -110,6 +110,10 @@
   padding: 0 24px;
   @include text-style(18px, 1.56, 0.03em);
   color: var(--main-dg-color);
+
+  @media screen and (max-width: 400px) {
+    @include text-style(16px, 1.56, 0.03em);
+  }
 }
 
 .work-example__text {
