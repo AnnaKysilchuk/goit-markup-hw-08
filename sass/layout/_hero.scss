@@ -86,8 +86,8 @@
   @include text-style(26px, 1.62, 0.06em, 900);
   max-width: 360px;
 
-  @media screen and (nim-width: $desktop) {
-    width: 696px;
+  @media screen and (min-width: $desktop) {
+    max-width: 696px;
     @include text-style(44px, 1.36, 0.06em, 900);
   }
 }

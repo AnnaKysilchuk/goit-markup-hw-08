@@ -99,12 +99,6 @@ body {
   color: var(--main-dg-color);
 }
 
-@media screen and (min-width: 768px) {
-  .logo {
-    margin-right: 88px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .logo {
     margin-right: 93px;
@@ -581,9 +575,9 @@ body {
   max-width: 360px;
 }
 
-@media screen and (nim-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .hero__title {
-    width: 696px;
+    max-width: 696px;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
@@ -691,7 +685,7 @@ body {
   color: var(--main-dg-color);
 }
 
-.team__container {
+.team {
   background-color: var(--secondary-dg-color);
 }
 
